@@ -1,4 +1,16 @@
 
+# 🚀 Django + MySQL + Nginx – Fully Dockerized 3-Tier App 🐳🌐
+
+Welcome to my latest hands-on project! This repository contains a **Dockerized 3-tier application** featuring Django for the backend, MySQL for data storage, and Nginx as a reverse proxy – all orchestrated using Docker Compose.
+
+---
+
+## 🔧 Project Architecture
+
+```
+Client <--> Nginx (Reverse Proxy) <--> Django (App Server) <--> MySQL (Database)
+```
+
 ### 🔹 Components:
 
 - **Django App Container** – Handles all backend logic and runs on port `8000`
@@ -32,3 +44,30 @@
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+   ```
+
+2. **Start the application**:
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the app**:
+   ```
+   http://<your-server-ip>/
+   ```
+
+---
+
+## 📦 Tech Stack
+
+- **Backend:** Django
+- **Database:** MySQL
+- **Proxy Server:** Nginx
+- **Containerization:** Docker, Docker Compose
+- **Deployment:** AWS EC2
+
+---
+
+## 🙌 Final Thoughts
+
+This project strengthened my understanding of Docker, Nginx, networking, and cloud deployment. Feel free to explore, fork, or reach out if you have any questions. Happy coding! 🎯
